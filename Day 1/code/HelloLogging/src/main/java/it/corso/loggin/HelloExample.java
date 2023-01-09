@@ -13,7 +13,8 @@ public class HelloExample{
 		logger.warn("This is warn : " );
 		logger.error("This is error : " );
 		logger.fatal("This is fatal : " );
-		
+
+		logger.info("This is debug : ");
 	}
 	
 	private void tryPrintLog(String parameter){
@@ -26,7 +27,7 @@ public class HelloExample{
 			logger.info("This is info : " + parameter);
 		}
 		
-		logger.warn("This is warn : " + parameter);
+		logger.warn("This is warn: " + parameter);
 		logger.error("This is error : " + parameter);
 		logger.fatal("This is fatal : " + parameter);
 		

@@ -10,7 +10,6 @@
 
 	<properties>
 		<jdk.version>17</jdk.version>
-		<log4j.version>1.</log4j.version>
 	</properties>
 
 	<dependencies>

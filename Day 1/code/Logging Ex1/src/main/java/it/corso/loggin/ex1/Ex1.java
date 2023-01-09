@@ -24,7 +24,9 @@ public class Ex1 {
             input = this.divide(input,input2);
             System.out.println(input);
         } catch (InputMismatchException inputMismatchException) {
+
         } catch (ArithmeticException ex) {
+
         } catch (Exception exception) {
         }
     }

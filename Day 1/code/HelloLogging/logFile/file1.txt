@@ -1,0 +1,8 @@
+2023-01-09 12:50:45 DEBUG HelloExample:22 - This is debug : Trying
+2023-01-09 12:50:45 INFO  HelloExample:26 - This is info : Trying
+2023-01-09 12:50:45 WARN  HelloExample:29 - This is warn : Trying
+2023-01-09 12:50:45 ERROR HelloExample:30 - This is error : Trying
+2023-01-09 12:50:45 FATAL HelloExample:31 - This is fatal : Trying
+2023-01-09 12:50:45 WARN  HelloExample:13 - This is warn : 
+2023-01-09 12:50:45 ERROR HelloExample:14 - This is error : 
+2023-01-09 12:50:45 FATAL HelloExample:15 - This is fatal : 

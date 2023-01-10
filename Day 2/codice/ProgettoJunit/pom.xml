@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.example</groupId>
+    <groupId>it.corso.junitTest</groupId>
     <artifactId>ProgettoJunit</artifactId>
     <version>1.0-SNAPSHOT</version>
 
@@ -26,6 +26,18 @@
     <!-- https://jeremylong.github.io/DependencyCheck/dependency-check-maven/index.html -->
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M7</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.junit.jupiter</groupId>
+                        <artifactId>junit-jupiter-engine</artifactId>
+                        <version>5.9.1</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
             <!--
             <plugin>
                 <groupId>org.owasp</groupId>

@@ -13,7 +13,8 @@ Realizzare la relativa classe di test attraverso l'utilizzo di Junit che verific
 che effettivamente i metodi eseguano le operazioni correttamente.
 
 ### 3 step
-Verificare con Junit che in caso di divisione per zero lanci un eccezione IllegalArgumentException.
+Verificare con Junit che in caso di inserimento del secondo parametro pari a 0 lanci
+un' eccezione IllegalArgumentException.
 
 ### 4 step
 Coprire tutte i metodi realizzati.

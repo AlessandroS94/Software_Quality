@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: it.corso.junitTest.business.StudentBOTest
 -------------------------------------------------------------------------------
-Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 s - in it.corso.junitTest.business.StudentBOTest

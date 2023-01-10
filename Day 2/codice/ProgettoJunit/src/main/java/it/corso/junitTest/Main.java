@@ -9,8 +9,9 @@ public class Main {
         System.out.println("Hello world!");
         StudentBO studentBO = new StudentBO();
         Student student = studentBO.createStudent("Ale","Sall",29,287566);
-        studentBO.toString();
+        //studentBO.toString();
         System.out.println(studentBO.calcolaAnno(student));
+
     }
 
 }

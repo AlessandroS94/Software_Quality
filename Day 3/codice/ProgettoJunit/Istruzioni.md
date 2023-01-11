@@ -23,3 +23,6 @@ Utilizzare log4J per documentare eventuali eccezioni lanciate
 1. l'effettivo inserimento di un evento nel calendario
 2. l'effettiva rimozione di un evento dal calendario
 3. coverage del 100% dei metodi della classe Evento
+
+### Utilizzare Owasp
+Risolvere le vulnerabilità 

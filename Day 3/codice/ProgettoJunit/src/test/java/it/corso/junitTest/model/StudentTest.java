@@ -14,6 +14,7 @@ public class StudentTest {
         //Student student2 = new Student(nome,cognome,ageOfYear,matr);
         assertEquals(nome, student.getName());
         assertEquals(cognome, student.getCognome());
+
     }
 
 }

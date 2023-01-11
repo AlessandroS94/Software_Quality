@@ -48,14 +48,12 @@
                 <groupId>org.owasp</groupId>
                 <artifactId>dependency-check-maven</artifactId>
                 <version>7.4.3</version>
-
                 <configuration>
                     <ossindexAnalyzerEnabled>false</ossindexAnalyzerEnabled>
                     <retireJsAnalyzerEnabled>false</retireJsAnalyzerEnabled>
                     <nuspecAnalyzerEnabled>false</nuspecAnalyzerEnabled>
                     <assemblyAnalyzerEnabled>false</assemblyAnalyzerEnabled>
                 </configuration>
-
                 <executions>
                     <execution>
                         <goals>

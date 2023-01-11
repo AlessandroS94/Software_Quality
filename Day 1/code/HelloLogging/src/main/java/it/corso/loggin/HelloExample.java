@@ -1,10 +1,11 @@
 package it.corso.loggin;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class HelloExample{
 	
-	final static Logger logger = Logger.getLogger(HelloExample.class);
+	final static Logger logger = LogManager.getLogger(HelloExample.class);
 	
 	public static void main(String[] args) {
 	

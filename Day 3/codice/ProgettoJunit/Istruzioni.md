@@ -6,13 +6,15 @@
    1. Nome, Descrizione, giorno, mese, anno;
    2. Getter e Setter
    3. Costruttore vuoto e con parametri
-   4. Metodo per la visualizzazione di tutti gli eventi nel calendario
 3. Classe Calendario con:
    1. Campi Nome e Descrizione ed una lista Eventi
    2. Costruttore vuoto e con parametri
    3. Getter e setter
    4. add dell'evento sul calendario
    5. remove dell'evento dal calendario
+   6. Metodo per la visualizzazione di tutti gli eventi nel calendario
+   
+Utilizzare la classe Main per settare gli eventi all'interno del calendario.
 
 ### Utilizzare Log4j
 Utilizzare log4j per info sull'effettivo avvio dell'applicazione

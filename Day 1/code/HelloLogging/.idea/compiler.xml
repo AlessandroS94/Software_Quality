@@ -9,8 +9,5 @@
         <module name="LoggingExample" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="LoggingExample" target="17" />
-    </bytecodeTargetLevel>
   </component>
 </project>

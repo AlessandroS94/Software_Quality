@@ -13,7 +13,7 @@ public class HelloExample2{
 		try{
 			obj.divide();
 		}catch(ArithmeticException ex){
-			logger.error("Sorry, something wrong!", ex);
+			logger.fatal("Sorry, something wrong!", ex);
 		}
 	}
 	

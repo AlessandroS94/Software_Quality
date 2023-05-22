@@ -1,22 +1,8 @@
-2023-01-09 15:07:03 FATAL HelloExample:31 - This is fatal : Trying
-2023-01-09 15:07:03 FATAL HelloExample:15 - This is fatal : 
-2023-01-09 15:07:49 FATAL HelloExample:31 - This is fatal : Trying
-2023-01-09 15:07:49 FATAL HelloExample:15 - This is fatal : 
-2023-05-22 11:43:33 DEBUG HelloExample:25 - This is debug : Trying
-2023-05-22 11:43:33 INFO  HelloExample:29 - This is info : Trying
-2023-05-22 11:43:33 WARN  HelloExample:32 - This is warn: Trying
-2023-05-22 11:43:33 ERROR HelloExample:33 - This is error : Trying
-2023-05-22 11:43:33 FATAL HelloExample:34 - This is fatal : Trying
-2023-05-22 11:43:33 WARN  HelloExample:15 - This is warn : 
-2023-05-22 11:43:33 ERROR HelloExample:16 - This is error : 
-2023-05-22 11:43:33 FATAL HelloExample:17 - This is fatal : 
-2023-05-22 11:43:33 INFO  HelloExample:19 - This is debug : 
-2023-05-22 11:50:50 DEBUG HelloExample:25 - This is debug : Trying
-2023-05-22 11:50:50 INFO  HelloExample:29 - This is info : Trying
-2023-05-22 11:50:50 WARN  HelloExample:32 - This is warn: Trying
-2023-05-22 11:50:50 ERROR HelloExample:33 - This is error : Trying
-2023-05-22 11:50:50 FATAL HelloExample:34 - This is fatal : Trying
-2023-05-22 11:50:50 WARN  HelloExample:15 - This is warn : 
-2023-05-22 11:50:50 ERROR HelloExample:16 - This is error : 
-2023-05-22 11:50:50 FATAL HelloExample:17 - This is fatal : 
-2023-05-22 11:50:50 INFO  HelloExample:19 - This is debug : 
+2023-05-22 14:50:52 FATAL HelloExample2:16 - Sorry, something wrong!
+java.lang.ArithmeticException: / by zero
+	at it.corso.loggin.HelloExample2.divide(HelloExample2.java:22)
+	at it.corso.loggin.HelloExample2.main(HelloExample2.java:14)
+2023-05-22 14:50:56 FATAL HelloExample2:16 - Sorry, something wrong!
+java.lang.ArithmeticException: / by zero
+	at it.corso.loggin.HelloExample2.divide(HelloExample2.java:22)
+	at it.corso.loggin.HelloExample2.main(HelloExample2.java:14)

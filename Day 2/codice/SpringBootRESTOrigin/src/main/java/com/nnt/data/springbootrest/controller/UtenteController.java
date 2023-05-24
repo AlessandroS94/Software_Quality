@@ -12,24 +12,24 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/users")
+@RequestMapping("/utente")
 public class UtenteController {
     @Autowired
     GruppoRepository gruppoRepository;
     @Autowired
     UtenteRepository utenteRepository;
 
-    @PostMapping("")
+    @PostMapping("/create")
     public ResponseEntity<Utente> create(@RequestBody Utente utente){
         Utente utente1 = utenteRepository.save(utente);
         return new ResponseEntity<Utente>(utente1,HttpStatus.CREATED);
     }
-    @GetMapping("")
+    @GetMapping("/")
     public ResponseEntity<List<Utente>> listUtenti(){
         return new ResponseEntity<>(utenteRepository.findAll(),HttpStatus.OK);
     }
 
-    @PutMapping("")
+    @PostMapping("/update")
     public ResponseEntity<Utente> update(@RequestBody Utente utente){
         Utente utente1 = utenteRepository.save(utente);
         return new ResponseEntity<Utente>(utente1,HttpStatus.OK);

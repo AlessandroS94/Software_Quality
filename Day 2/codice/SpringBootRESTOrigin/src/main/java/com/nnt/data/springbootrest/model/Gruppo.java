@@ -23,8 +23,4 @@ public class Gruppo extends BaseEntity {
         this.utentes.add(utente);
         utente.setGruppo(this);
     }
-
-    public void removeUtente(Utente utente) {
-        this.utentes.remove(utente);
-    }
 }

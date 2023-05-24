@@ -25,13 +25,14 @@ public class GruppoController {
 
     @GetMapping("/")
     public ResponseEntity<?> getGroups() {
-        logger.info("Lista gruppi");
+        logger.error("Lista gruppi");
+        Exception e = new Exception("ci");
+        logger.error("ecce",e);
         return new ResponseEntity<>(groupRepository.findAll(), HttpStatus.OK);
     }
 
-    @PutMapping("/{groupId}/users/{userId}")
+    @PostMapping("/{groupId}/users/{userId}")
     public ResponseEntity<?> addUserToGroup(@PathVariable Long groupId, @PathVariable Long userId) {
-        logger.info("Lista utenti");
         Gruppo group = groupRepository.findById(groupId)
                 .orElseThrow(() -> new ResourceNotFoundException("Group not found with id: " + groupId));
         Utente user = userRepository.findById(userId)
@@ -41,16 +42,14 @@ public class GruppoController {
         return new ResponseEntity(group, HttpStatus.OK);
     }
 
-    @PostMapping("")
+    @PostMapping("/create")
     public ResponseEntity<Gruppo> createGroup(@RequestBody Gruppo group) {
-        logger.info("Utente Creato");
         Gruppo newGroup = groupRepository.save(group);
         return ResponseEntity.ok(newGroup);
     }
 
     @DeleteMapping("/{id}")
     public ResponseEntity<?> delete(@PathVariable Long id) {
-        logger.info("Utente eliminato");
         groupRepository.deleteById(id);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }

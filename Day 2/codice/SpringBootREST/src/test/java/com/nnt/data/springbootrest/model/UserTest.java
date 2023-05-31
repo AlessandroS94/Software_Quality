@@ -8,43 +8,43 @@ import org.springframework.boot.test.context.SpringBootTest;
 import java.time.LocalDate;
 
 @SpringBootTest
-public class UtenteTest {
-    private Utente utente;
+public class UserTest {
+    private User user;
 
     @BeforeEach
     public void setUp() {
-        utente = new Utente();
+        user = new User();
     }
 
     @Test
     public void testSetName() {
         String name = "John";
-        utente.setName(name);
+        user.setName(name);
 
-        Assertions.assertEquals(name, utente.getName());
+        Assertions.assertEquals(name, user.getName());
     }
 
     @Test
     public void testSetSurname() {
         String surname = "Doe";
-        utente.setSurname(surname);
+        user.setSurname(surname);
 
-        Assertions.assertEquals(surname, utente.getSurname());
+        Assertions.assertEquals(surname, user.getSurname());
     }
 
     @Test
     public void testSetData() {
         LocalDate date = LocalDate.now();
-        utente.setData(date);
+        user.setData(date);
 
-        Assertions.assertEquals(date, utente.getData());
+        Assertions.assertEquals(date, user.getData());
     }
 
     @Test
     public void testSetGruppo() {
-        Gruppo gruppo = new Gruppo();
-        utente.setGruppo(gruppo);
+        Group group = new Group();
+        user.setGroup(group);
 
-        Assertions.assertEquals(gruppo, utente.getGruppo());
+        Assertions.assertEquals(group, user.getGroup());
     }
 }

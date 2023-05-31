@@ -1,14 +1,16 @@
 package com.nnt.data.springbootrest.controller;
 
 
-import com.nnt.data.springbootrest.model.Gruppo;
-import com.nnt.data.springbootrest.model.Utente;
-import com.nnt.data.springbootrest.repository.GruppoRepository;
-import com.nnt.data.springbootrest.repository.UtenteRepository;
+import com.nnt.data.springbootrest.model.Group;
+import com.nnt.data.springbootrest.model.User;
+import com.nnt.data.springbootrest.repository.GroupRepository;
+import com.nnt.data.springbootrest.repository.UserRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestClassOrder;
 import org.mockito.InjectMocks;
 import org.mockito.MockitoAnnotations;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
@@ -21,60 +23,57 @@ import java.util.Optional;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyLong;
-import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-@SpringBootTest
-class GruppoControllerTest {
+@WebMvcTest
+class GroupControllerTest {
 
     private MockMvc mockMvc;
 
     @MockBean
-    private GruppoRepository gruppoRepository;
+    private GroupRepository groupRepository;
 
     @MockBean
-    private UtenteRepository utenteRepository;
+    private UserRepository userRepository;
 
     @InjectMocks
-    private GruppoController gruppoController;
+    private GroupController groupController;
 
     @BeforeEach
     public void setUp() {
         MockitoAnnotations.initMocks(this);
-        mockMvc = MockMvcBuilders.standaloneSetup(gruppoController).build();
+        mockMvc = MockMvcBuilders.standaloneSetup(groupController).build();
     }
 
     @Test
     public void testGetGroups() throws Exception {
-        Gruppo gruppo1 = new Gruppo();
-        gruppo1.setId(1L);
-        gruppo1.setName("Gruppo 1");
+        Group group1 = new Group();
+        group1.setId(1L);
+        group1.setName("Group 1");
 
-        Gruppo gruppo2 = new Gruppo();
-        gruppo2.setId(2L);
-        gruppo2.setName("Gruppo 2");
+        Group group2 = new Group();
+        group2.setId(2L);
+        group2.setName("Group 2");
 
-        when(gruppoRepository.findAll()).thenReturn(Arrays.asList(gruppo1, gruppo2));
+        when(groupRepository.findAll()).thenReturn(Arrays.asList(group1, group2));
 
-        verify(gruppoRepository).save(gruppo1);
-
-        mockMvc.perform(MockMvcRequestBuilders.get("/groups/"))
+        mockMvc.perform(MockMvcRequestBuilders.get("/groups"))
                 .andExpect(status().isOk());
     }
 
     @Test
     public void testAddUserToGroup() throws Exception {
-        Gruppo gruppo = new Gruppo();
-        gruppo.setId(1L);
-        gruppo.setName("Gruppo 1");
+        Group group = new Group();
+        group.setId(1L);
+        group.setName("Group 1");
 
-        Utente utente = new Utente();
-        utente.setId(1L);
-        utente.setName("Utente 1");
+        User user = new User();
+        user.setId(1L);
+        user.setName("User 1");
 
-        when(gruppoRepository.findById(anyLong())).thenReturn(Optional.of(gruppo));
-        when(utenteRepository.findById(anyLong())).thenReturn(Optional.of(utente));
+        when(groupRepository.findById(anyLong())).thenReturn(Optional.of(group));
+        when(userRepository.findById(anyLong())).thenReturn(Optional.of(user));
 
         mockMvc.perform(MockMvcRequestBuilders.put("/groups/{groupId}/users/{userId}", 1L, 1L))
                 .andExpect(status().isOk());
@@ -82,16 +81,16 @@ class GruppoControllerTest {
 
     @Test
     public void testCreateGroup() throws Exception {
-        Gruppo gruppo = new Gruppo();
-        gruppo.setId(1L);
-        gruppo.setName("Gruppo 1");
+        Group group = new Group();
+        group.setId(1L);
+        group.setName("Group 1");
 
-        when(gruppoRepository.save(any(Gruppo.class))).thenReturn(gruppo);
+        when(groupRepository.save(any(Group.class))).thenReturn(group);
 
         mockMvc.perform(MockMvcRequestBuilders.post("/groups")
-                        .content("{\"name\":\"Gruppo 1\"}")
+                        .content("{\"name\":\"Group 1\"}")
                         .contentType(MediaType.APPLICATION_JSON))
-                .andExpect(status().isOk());
+                .andExpect(status().isCreated());
     }
 
     @Test

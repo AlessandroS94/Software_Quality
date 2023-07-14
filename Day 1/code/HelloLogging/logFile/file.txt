@@ -1,8 +1,0 @@
-2023-05-22 14:50:52 FATAL HelloExample2:16 - Sorry, something wrong!
-java.lang.ArithmeticException: / by zero
-	at it.corso.loggin.HelloExample2.divide(HelloExample2.java:22)
-	at it.corso.loggin.HelloExample2.main(HelloExample2.java:14)
-2023-05-22 14:50:56 FATAL HelloExample2:16 - Sorry, something wrong!
-java.lang.ArithmeticException: / by zero
-	at it.corso.loggin.HelloExample2.divide(HelloExample2.java:22)
-	at it.corso.loggin.HelloExample2.main(HelloExample2.java:14)

@@ -42,12 +42,12 @@ public class UserControllerTest {
         User user = new User();
         user.setId(1L);
         user.setName("Alex");
-        user.setSurname("Doe");
+        user.setSurname("Do");
 
         when(userRepository.save(any(User.class))).thenReturn(user);
 
         mockMvc.perform(MockMvcRequestBuilders.post("/users")
-                        .content("{\"name\":\"John\",\"surname\":\"Doe\"}")
+                        .content("{\"name\":\"Alex\",\"surname\":\"Do\"}")
                         .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isCreated());
     }
@@ -76,13 +76,13 @@ public class UserControllerTest {
     public void testUpdateUtente() throws Exception {
         User user = new User();
         user.setId(1L);
-        user.setName("John");
-        user.setSurname("Doe");
+        user.setName("Alex");
+        user.setSurname("DO");
 
         when(userRepository.save(any(User.class))).thenReturn(user);
 
         mockMvc.perform(MockMvcRequestBuilders.put("/users")
-                        .content("{\"id\":1,\"name\":\"John\",\"surname\":\"Doe\"}")
+                        .content("{\"id\":1,\"name\":\"Alex\",\"surname\":\"DO\"}")
                         .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk());
     }

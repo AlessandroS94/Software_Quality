@@ -1,0 +1,13 @@
+[INFO ] 2023-07-14 22:14:50.151 [main] HelloExample - This is info : Trying
+[WARN ] 2023-07-14 22:14:50.152 [main] HelloExample - This is warn: Trying
+[ERROR] 2023-07-14 22:14:50.152 [main] HelloExample - This is error : Trying
+[FATAL] 2023-07-14 22:14:50.152 [main] HelloExample - This is fatal : Trying
+[WARN ] 2023-07-14 22:14:50.152 [main] HelloExample - This is warn : 
+[ERROR] 2023-07-14 22:14:50.152 [main] HelloExample - This is error : 
+[FATAL] 2023-07-14 22:14:50.152 [main] HelloExample - This is fatal : 
+[INFO ] 2023-07-14 22:14:50.153 [main] HelloExample - This is debug : 
+[FATAL] 2023-07-14 22:14:58.207 [main] HelloExample2 - Sorry, something wrong!
+java.lang.ArithmeticException: / by zero
+	at it.ntt.SQLog4J.HelloExample2.divide(HelloExample2.java:21) ~[classes/:?]
+	at it.ntt.SQLog4J.HelloExample2.main(HelloExample2.java:13) [classes/:?]
+[INFO ] 2023-07-14 22:15:04.358 [main] Main - Hello World!

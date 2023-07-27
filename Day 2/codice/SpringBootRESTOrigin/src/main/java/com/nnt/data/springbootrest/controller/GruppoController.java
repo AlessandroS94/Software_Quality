@@ -27,7 +27,7 @@ public class GruppoController {
     public ResponseEntity<?> getGroups() {
         logger.error("Lista gruppi");
         Exception e = new Exception("ci");
-        logger.error("ecce",e);
+        logger.error("getGroups() Contrller problemem",e);
         return new ResponseEntity<>(groupRepository.findAll(), HttpStatus.OK);
     }
 

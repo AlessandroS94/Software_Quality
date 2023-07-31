@@ -25,7 +25,7 @@ public class GruppoController {
 
     @GetMapping("/")
     public ResponseEntity<?> getGroups() {
-        logger.error("Lista gruppi");
+        logger.warn("Lista gruppi");
         Exception e = new Exception("ci");
         logger.error("getGroups() Contrller problemem",e);
         return new ResponseEntity<>(groupRepository.findAll(), HttpStatus.OK);
@@ -44,6 +44,7 @@ public class GruppoController {
 
     @PostMapping("/create")
     public ResponseEntity<Gruppo> createGroup(@RequestBody Gruppo group) {
+        logger.info("create group");
         Gruppo newGroup = groupRepository.save(group);
         return ResponseEntity.ok(newGroup);
     }

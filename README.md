@@ -4,7 +4,7 @@
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot)
 ![Software Quality](https://img.shields.io/badge/Software%20Quality-FF6F61?style=for-the-badge)
 
-Benvenuti al corso di Software Quality! Questo corso vi guiderà attraverso le fondamenta della qualità del software, utilizzando strumenti come JUnit, Logger e Spring Boot Test.
+Benvenuti al  corso di Software Quality! Questo corso vi guiderà attraverso le fondamenta della qualità del software, utilizzando strumenti come JUnit, Logger e Spring Boot Test.
 
 ## Contenuti
 

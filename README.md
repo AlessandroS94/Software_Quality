@@ -29,7 +29,6 @@ Benvenuti al  corso di Software Quality! Questo corso vi guiderà attraverso le 
 |Day| Descrizione|
 |---|------------|
 |1| Logger codice esercizio e materiale |
-|---|------------|
 |2| JUnit |
 
 

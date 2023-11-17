@@ -26,6 +26,10 @@ Benvenuti al  corso di Software Quality! Questo corso vi guiderà attraverso le 
 - Maven.
 - Docker.
 
+|Day| Descrizione|
+|---|------------|
+|1| Logger |
+
 ## Istruzioni iniziali
 
 1. Clona questo repository:

@@ -29,7 +29,7 @@ Benvenuti al  corso di Software Quality! Questo corso vi guiderà attraverso le 
 |Day| Descrizione|
 |---|------------|
 |1| Logger esempi, esercizi e materiale |
-|2| JUnit - SonarQube esempi, esercizi e materiale |
+|2| Jupiter or junit5- SonarQube esempi, esercizi e materiale |
 |3| Owasp esempi, esercizi e materiale  |
 
 

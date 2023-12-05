@@ -2,4 +2,4 @@
 
 |Project| Descrizione |
 |-------|-------------|
-|SpringbootRest| SonarQube|
+|SpringbootRest| OWASP and SonarQube|

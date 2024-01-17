@@ -30,7 +30,7 @@ Benvenuti al  corso di Software Quality! Questo corso vi guiderà attraverso le 
 |---|------------|
 |1| Logger esempi, esercizi e materiale |
 |2| Jupiter (junit5) - SonarQube esempi, esercizi e materiale |
-|3| Owasp esempi, esercizi e materiale  |
+|3| Owasp esempi, esercizi e materiale. Teoaria di utilizzo di Postman  |
 
 
 ## Istruzioni iniziali

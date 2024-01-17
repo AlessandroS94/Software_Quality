@@ -21,7 +21,7 @@ Benvenuti al  corso di Software Quality! Questo corso vi guiderà attraverso le 
 ## Prerequisiti
 
 - Conoscenza di base della programmazione Java 8 e Java 17.
-- Un IDE come Eclipse o IntelliJ IDEA.
+- Sts o IntelliJ IDEA.
 - JDK installato sul tuo computer.
 - Maven.
 - Docker.

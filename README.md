@@ -35,7 +35,7 @@ Benvenuti al  corso di Software Quality! Questo corso vi guiderà attraverso le 
 
 ## Istruzioni iniziali
 
-1. Clona questo repository:
+1. Clona questo repository inn locale:
 ```bash
 git clone https://github.com/AlessandroS94/Software_Quality.git
 

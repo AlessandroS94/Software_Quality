@@ -1,4 +1,4 @@
-# FOLDER
+# DAY 3
 
 ## Codice
 Contiene alcuni esempi di progetto in cui applicare la teoria vista nelle giornate precedenti.

@@ -6,7 +6,7 @@
 ![Owasp](https://img.shields.io/badge/OWASP-6DB33F?style=for-the-badge)
 ![Maven](https://img.shields.io/badge/Maven-ED8B00?style=for-the-badge)
 
-Benvenuti al  corso di Software Quality! Questo corso vi guiderà attraverso le fondamenta della qualità del software, utilizzando strumenti come JUnit, Logger, Spring Boot Test, Owasp, SonarQube.
+Questo corso vi guiderà attraverso le fondamenta della qualità del software, utilizzando strumenti come JUnit, Logger, Spring Boot Test, Owasp, SonarQube.
 ## Contenuti
 
 1. **Introduzione alla Software Quality:** Cos'è e perché è importante.
